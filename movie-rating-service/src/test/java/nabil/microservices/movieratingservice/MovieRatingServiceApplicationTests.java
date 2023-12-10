@@ -1,10 +1,10 @@
-package nabil.microservices.moviedataservice;
+package nabil.microservices.movieratingservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MovieDataServiceApplicationTests {
+class MovieRatingServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

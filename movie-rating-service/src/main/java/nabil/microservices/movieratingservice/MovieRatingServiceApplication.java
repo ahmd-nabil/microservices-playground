@@ -1,13 +1,13 @@
-package nabil.microservices.moviedataservice;
+package nabil.microservices.movieratingservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MovieDataServiceApplication {
+public class MovieRatingServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MovieDataServiceApplication.class, args);
+		SpringApplication.run(MovieRatingServiceApplication.class, args);
 	}
 
 }

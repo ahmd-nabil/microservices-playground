@@ -22,7 +22,7 @@
 
     <modules>
         <module>movie-catalog-service</module>
-        <module>movie-data-service</module>
+        <module>movie-rating-service</module>
         <module>movie-info-service</module>
     </modules>
 
