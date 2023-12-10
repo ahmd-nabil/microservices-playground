@@ -28,10 +28,10 @@ public class CatalogsController {
     @GetMapping("/{movieId}")
     public ResponseEntity<List<Catalog>> getAllCatalogsForMovie(@PathVariable(name = "movieId") Integer movieId) {
         // using var messes up generics (return type of getForObject becomes array for no reason)
-        Movie movie = restTemplate.getForObject("http://localhost:8081/movies/" + movieId, Movie.class);
+        Movie movie = restTemplate.getForObject("http://MOVIE-INFO-SERVICE/movies/" + movieId, Movie.class);
         // fetch all ratings for that movie and for each rating create a catalog (bad idea, but we're playing around :D )
         List<Catalog> ratings = restTemplate
-                .exchange("http://localhost:8082/ratings/" + movieId,
+                .exchange("http://MOVIE-RATING-SERVICE/ratings/" + movieId,
                         HttpMethod.GET,
                         null,
                         new ParameterizedTypeReference<List<Catalog>>(){}).getBody();
