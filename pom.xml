@@ -24,6 +24,7 @@
         <module>movie-catalog-service</module>
         <module>movie-rating-service</module>
         <module>movie-info-service</module>
+        <module>eureka-server</module>
     </modules>
 
     <dependencies>
